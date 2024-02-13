@@ -1,0 +1,84 @@
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: linear-gradient(45deg, #43389F, #4ec6ca);
+    font-family: 'Courier New', Courier, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+.number{
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+.number div{
+    position: absolute;
+    box-shadow: 0 0 13px 0 rgb(0 0 0 0.2);
+}
+
+.one-one{
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    height: 100px;
+}
+
+.one-two{
+    position: absolute;
+    left: -16px;
+    width: 20px;
+    height: 40px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border-radius: 3px;
+}
+
+.zero{
+    position: absolute;
+    width: 100px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 24px solid #fff;
+    height: 100px;
+}
+
+.zero-one{
+    left: 20px;
+}
+
+.zero-two{
+    right: 0;
+}
+
+.text{
+    font-size: 83px;
+    position: relative;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.name{
+    font-size: 25px;
+    position: relative;
+    line-height: 20px;
+    text-transform: uppercase;
+}
