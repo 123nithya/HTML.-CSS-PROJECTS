@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAF9;
+    font-family: "Sora", sans-serif;
+}
+.container{
+    width: 400px;
+    height: 420px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+.container-content{
+    position: relative;
+    padding: 20px 16px;
+}
+.container-content img{
+    width: 369px;
+    height: 200px;
+    border-radius: 15px;
+}
+span{
+    top: 3%;
+}
+.container-content .content .heading{
+    font-weight: bold;
+    margin-top: 18px;
+    font-size: 20px;
+    color: #20293A;
+}
+.container-content .content .para{
+    font-size: 14px;
+    color: #6C727F;
+    margin-top: 6px;
+}
+.container-content .content hr{
+    background-color: #E5EAF0 !important;
+    margin-top: 20px;
+}
+.container-content .content .name{
+    font-size: 12px;
+    color: #6C727F;
+    margin-top: 18px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root{
+    --bg: #fafaf9;
+    --container-color: #ffffff;
+    --title: #20293a;
+    --design: #812fde;
+    --design-bg: #E6D6FC;
+    --ash: #e5eaf0;
+    --gray: #6c727f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg);
+    font-family: "Sora", sans-serif;
+}
+
+section,
+section img{
+    height: fit-content;
+    border-radius: 10px;
+}
+
+section{
+    background-color: var(--container-color);
+}
+
+section div{
+    width: 336px;
+    padding: 16px;
+}
+
+section img{
+    width: 336px;
+    margin-bottom: 16px;
+}
+
+section .tag{
+    background-color: var(--design-bg);
+    color: var(--design);
+    padding: 4px 16px;
+    border-radius: 16px;
+    font-size: 0.625rem;
+    font-weight: 500;
+}
+
+section h1{
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--title);
+}
+
+section p{
+    margin-bottom: 20px;
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
+section div:nth-child(1){
+    border-bottom: 1px solid var(--ash);
+}
+
+section .author{
+    color: var(--gray);
+    font-size: 0.75rem;
+    
+}
