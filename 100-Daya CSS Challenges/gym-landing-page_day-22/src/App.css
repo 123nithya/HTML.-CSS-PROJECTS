@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../src/Images/pic2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+/* navbar starts */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.navbar .logo img {
+  width: 110px;
+  height: 110px;
+  padding: 5%;
+  margin-top: 3%;
+  font-size: 3rem;
+}
+.navbar-links ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  cursor: pointer;
+  margin-left: -100%;
+}
+.navbar-links li {
+  list-style: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+.navbar-links li::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  background-color: #ffffff;
+  transition: all 0.5s;
+  border-radius: 40px;
+}
+.navbar-links li:hover::after {
+  width: 80%;
+}
+/* navbar ends */
+
+/* Ḥero section starts */
+.hero-section-container {
+  text-align: center;
+  margin-top: 9%;
+}
+.primary-heading {
+  font-size: 5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+.primary-text {
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: #fff;
+}
+.credits{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    color: #ffffff;
+}
+.credits h3{
+    font-size: 2rem;
+}
+/* Hero section ends */
