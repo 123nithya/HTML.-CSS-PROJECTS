@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.bgContainer{
+    width: 100%;
+    height: 100vh;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    position: absolute;
+    width: 77%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2.wlc{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+h1.title{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 90%;
+    color: #ffffff;
+    position: absolute;
+    min-height: 90px;
+    left: 30%;
+    font-size: 1.5rem;
+    top: 1%;
+}
+
+.navbar .logo{
+    font-weight: 500;
+    font-size: 3rem;
+    margin-left: -215%;
+}
+
+.navbar-links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-links li {
+    list-style: none;
+    cursor: pointer !important;
+}
+
+.navbar-links li a{
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar-links li::before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #ffffff;
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+
+.navbar-links li::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #ffffff;
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+
+.navbar-links li:hover::before{
+    width: 80%;
+}
+
+.navbar-links li:hover::after{
+    width: 80%;
+}
+
+.navbar .btn{
+    padding: 0.9rem 1.75rem;
+    background-color: #ffffff;
+    border-radius: 30px;
+    color: #000000;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+    margin-left: 50%;
+}
