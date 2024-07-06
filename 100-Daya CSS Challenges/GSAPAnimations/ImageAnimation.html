@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GSAP Animation with Image</title>
+        <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    .img-container {
+      position: relative;
+    }
+
+    .img-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+    </head>
+    <body>
+        <div class="img-container">
+            <img src="./Images/img1.jpg" width="400px" height="500px"
+                style="border-radius: 30px;" alt="Animated Image">
+        </div>
+
+        <!-- GSAP Library -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+        <!-- Your JavaScript code -->
+        <script>
+    // Select the image element
+    const img = document.querySelector('.img-container img');
+
+    // GSAP animation
+    gsap.to(img, {
+      rotation: 360,
+      duration: 2,
+      ease: "none",
+      yoyo: true,
+      repeat: -1
+    });
+  </script>
+    </body>
+</html>
